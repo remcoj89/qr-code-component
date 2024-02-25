@@ -6,6 +6,7 @@
   --color-dark-blue: hsl(218, 44%, 22%);
 
   --font-size-body: 1.5rem;
+  --font-size-heading: 2.2rem;
 
   --font-weight-normal: 400;
   --font-weight-bold: 700;
@@ -28,8 +29,58 @@ html {
 
 body {
   background-color: var(--color-light-gray);
+  color: var(--color-grayish-blue);
   font-family: "Outfit", sans-serif;
   font-size: var(--font-size-body);
   font-style: normal;
   font-weight: var(--font-weight-normal);
+}
+
+a {
+  color: var(--color-dark-blue);
+}
+
+main {
+  width: 100%;
+}
+
+.card {
+  background-color: var(--color-white);
+  margin: 8.5rem auto;
+  max-width: 32rem;
+  overflow: hidden;
+  padding: 1.6rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+@media (min-width: 70rem) {
+  .card {
+    margin: 15.2rem auto;
+  }
+}
+
+.card .qr-image{
+  border-radius: 10px;
+  width: 100%;
+}
+
+.card .card-content {
+  margin-top: 2.4rem;
+}
+
+.card h1 {
+  color: var(--color-dark-blue);
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-bold);
+}
+
+.card p {
+  padding: 1.6rem;
+}
+
+.attribution {
+  text-align: center;
+  padding-bottom: 2.5rem;
+  width: 100%;
 }
