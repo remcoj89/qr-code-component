@@ -1,0 +1,35 @@
+/* Variables */
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-gray: hsl(212, 45%, 89%);
+  --color-grayish-blue: hwb(219 48% 38%);
+  --color-dark-blue: hsl(218, 44%, 22%);
+
+  --font-size-body: 1.5rem;
+
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+}
+
+/* End Variables */
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 67.5%;
+  min-height: 100%;
+}
+
+body {
+  background-color: var(--color-light-gray);
+  font-family: "Outfit", sans-serif;
+  font-size: var(--font-size-body);
+  font-style: normal;
+  font-weight: var(--font-weight-normal);
+}
